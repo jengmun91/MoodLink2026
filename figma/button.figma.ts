@@ -1,5 +1,5 @@
 // url=https://www.figma.com/design/Eo3tD5Lo2odmoWGf0Mfndz/GOO001P---MoodLink-MobileApp---Client-V2.0?node-id=6044-2667
-// source=src/components/primitives/AppButton.vue
+// source=https://github.com/jengmun91/MoodLink2026/blob/main/src/components/primitives/AppButton.vue
 // component=AppButton
 import figma from 'figma'
 
@@ -10,7 +10,7 @@ const state = instance.getEnum('state', { default: '', hover: '', focus: '', dis
 const label = instance.getString('label')
 const variantAttr = variant === 'primary' ? '' : ` variant="${variant}"`
 export default {
-  example: figma.code`<AppButton${variantAttr}${state}>${label}</AppButton>`,
+  example: figma.code`<AppButton label="${label}"${variantAttr}${state} />`,
   imports: ["import { AppButton } from '@/components'"],
   id: 'button',
   metadata: { nestable: true },

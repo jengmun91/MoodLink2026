@@ -1,5 +1,5 @@
 // url=https://www.figma.com/design/Eo3tD5Lo2odmoWGf0Mfndz/GOO001P---MoodLink-MobileApp---Client-V2.0?node-id=6051-4919
-// source=src/components/primitives/AppSkeleton.vue
+// source=https://github.com/jengmun91/MoodLink2026/blob/main/src/components/primitives/AppSkeleton.vue
 // component=AppSkeleton
 import figma from 'figma'
 

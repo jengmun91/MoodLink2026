@@ -1,7 +1,11 @@
 <script setup lang="ts">
 // Figma: footer-link · node 6044:2692 · state = default | hover | focus | disabled
 // Use on color/surface/inverse (dark footer).
-withDefaults(defineProps<{ href?: string; disabled?: boolean }>(), { href: '#', disabled: false })
+withDefaults(defineProps<{ label?: string; href?: string; disabled?: boolean }>(), {
+  label: '',
+  href: '#',
+  disabled: false,
+})
 </script>
 
 <template>
@@ -11,7 +15,7 @@ withDefaults(defineProps<{ href?: string; disabled?: boolean }>(), { href: '#', 
     :href="disabled ? undefined : href"
     :aria-disabled="disabled ? 'true' : undefined"
   >
-    <slot />
+    <slot>{{ label }}</slot>
   </a>
 </template>
 

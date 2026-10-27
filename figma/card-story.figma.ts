@@ -1,5 +1,5 @@
 // url=https://www.figma.com/design/Eo3tD5Lo2odmoWGf0Mfndz/GOO001P---MoodLink-MobileApp---Client-V2.0?node-id=6044-3131
-// source=src/components/primitives/CardStory.vue
+// source=https://github.com/jengmun91/MoodLink2026/blob/main/src/components/primitives/CardStory.vue
 // component=CardStory
 import figma from 'figma'
 
@@ -14,7 +14,7 @@ export default {
   tone="${tone}"
   title="${title}"
   copy="${copy}"
-  link-label="${link}"
+  link="${link}"
   href="#"
   image="/images/story.jpg"
 />`,

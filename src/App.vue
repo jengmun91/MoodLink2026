@@ -35,10 +35,10 @@ watchEffect(() => document.documentElement.setAttribute('lang', lang.value))
     </section>
 
     <section class="demo__stats" aria-label="Impact">
-      <StatBlock value="13M+" label="people within reach" icon="awareness" />
-      <StatBlock value="80K+" label="employees supported" icon="support" />
-      <StatBlock value="3M+" label="members enabled" icon="empowerment" />
-      <StatBlock value="600+" label="organisations connected" icon="connection" />
+      <StatBlock value="13M+" label="people within reach" icon-name="awareness" />
+      <StatBlock value="80K+" label="employees supported" icon-name="support" />
+      <StatBlock value="3M+" label="members enabled" icon-name="empowerment" />
+      <StatBlock value="600+" label="organisations connected" icon-name="connection" />
     </section>
 
     <section class="demo__cards" aria-label="Partner stories">

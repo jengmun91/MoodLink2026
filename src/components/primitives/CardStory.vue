@@ -6,13 +6,14 @@ withDefaults(
   defineProps<{
     title: string
     copy?: string
-    linkLabel?: string
+    /** Figma text property `link`: the call-to-action text at the bottom of the card. */
+    link?: string
     href?: string
     image?: string
     imageAlt?: string
     tone?: 'aqua' | 'lemon' | 'lilac'
   }>(),
-  { copy: '', linkLabel: 'Read the story  →', href: '#', image: '', imageAlt: '', tone: 'aqua' },
+  { copy: '', link: 'Read the story →', href: '#', image: '', imageAlt: '', tone: 'aqua' },
 )
 </script>
 
@@ -24,7 +25,7 @@ withDefaults(
     <span class="ml-card-story__content">
       <span class="ml-card-story__title">{{ title }}</span>
       <span v-if="copy" class="ml-card-story__copy">{{ copy }}</span>
-      <span class="ml-card-story__link">{{ linkLabel }}</span>
+      <span class="ml-card-story__link">{{ link }}</span>
     </span>
   </a>
 </template>

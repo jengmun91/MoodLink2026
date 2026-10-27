@@ -6,6 +6,8 @@ import AppSpinner from './AppSpinner.vue'
 
 withDefaults(
   defineProps<{
+    /** Figma text property `label`. A default slot still works for rich content. */
+    label?: string
     variant?: 'primary' | 'secondary'
     disabled?: boolean
     loading?: boolean
@@ -15,7 +17,7 @@ withDefaults(
     /** Shown instead of the label while loading. */
     loadingLabel?: string
   }>(),
-  { variant: 'primary', disabled: false, loading: false, type: 'button', loadingLabel: 'Sending…' },
+  { label: '', variant: 'primary', disabled: false, loading: false, type: 'button', loadingLabel: 'Sending…' },
 )
 </script>
 
@@ -38,7 +40,7 @@ withDefaults(
     />
     <span class="ml-button__label">
       <template v-if="loading">{{ loadingLabel }}</template>
-      <slot v-else />
+      <slot v-else>{{ label }}</slot>
     </span>
   </component>
 </template>

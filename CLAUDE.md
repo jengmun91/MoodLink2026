@@ -6,20 +6,21 @@ This repository is the MoodLink design system starter (Vue 3 + Vite + Storybook)
 
 | Path | What it is |
 |---|---|
-| `src/styles/tokens.css` | All design tokens, generated from Figma variables. Do not edit by hand. |
-| `src/styles/tokens.uni.css` | Same tokens in rpx for uni-app (`npm run tokens:uniapp`). |
+| `tokens/figma-variables.json` | Snapshot of the five `MoodLink DS / …` Figma variable collections. |
+| `src/styles/tokens.css` | All design tokens, generated from the snapshot by `npm run tokens`. Do not edit by hand. |
+| `src/styles/tokens.uni.css` | Same tokens in rpx for uni-app (also written by `npm run tokens`). |
 | `src/styles/base.css` | Fonts, reset and `.ml-text-<token>` text classes. |
 | `src/components/primitives/` | Primitive components (one file per Figma component). |
 | `src/components/composites/` | Composite components. |
 | `src/components/index.ts` | Import everything from `@/components`. |
-| `*.stories.ts` | Storybook stories (`npm run storybook`). |
-| `figma/*.figma.ts` | Code Connect templates mapped to Figma node IDs. |
+| `*.stories.ts` | One Storybook page per component, titled with the Figma name (`npm run storybook`). |
+| `figma/*.figma.ts` | Code Connect templates mapped to Figma node IDs (`npm run figma:check`). |
 
 Not built yet: the `feature-block` page sections and the `pattern-*` layouts. Build them from the primitives and composites above, following the Figma Key screens.
 
 ---
 
-Generated 27 Oct 2026 from the Figma file **GOO001P – MoodLink MobileApp – Client V2.0**.
+Version 2.0 · generated 27 Oct 2026 from the Figma file **GOO001P – MoodLink MobileApp – Client V2.0**.
 
 ## 1. Source of truth
 
@@ -68,6 +69,8 @@ Mobile values apply from 320 to 480px. Desktop values apply at 1440px. 481–143
 :root { /* mobile values (320–480) */ }
 @media (min-width: 481px) { :root { /* desktop values */ } }
 ```
+
+The five mobile modes (320, 360, 375, 390, 480) share the same token values; only the canvas width differs, so `grid-container` is fluid (100%) on mobile and 1352px on desktop. If a mobile mode ever gets its own values in Figma, `npm run tokens` adds a `@media` block for it automatically.
 
 ### Key colour tokens (Semantic)
 
@@ -180,7 +183,8 @@ Chinese letter spacing is always 0.
 ## 5. Component naming
 
 - Figma names are lowercase kebab-case. Vue components use the PascalCase of the same name: `card-story` → `CardStory.vue`. Exception: `button` → `AppButton.vue`, to avoid the HTML element name. (Confirm the prefix convention with the team.)
-- Figma variant and text properties map 1:1 to props with the same names: `variant`, `state`, `tone`, `type`, `size`, `label`, `title`, `copy`.
+- Figma variant and text properties map 1:1 to props with the same names: `variant`, `tone`, `type`, `size`, `label`, `title`, `copy`, `link`. Text properties are props (a default slot is also accepted for rich content). Kebab-case Figma names become camelCase props (`icon-name` → `iconName`, written `icon-name` in templates).
+- The one exception: Figma `alert` › `style` is the `variant` prop, because `style` is reserved in Vue.
 - `state=hover | focus | pressed` is CSS (`:hover`, `:focus-visible`, `:active`), not a prop. `disabled`, `loading`, `active`, `open` are props or attributes.
 - `viewport=desktop | mobile` and `layout=…` describe responsive or structural versions; implement one component with responsive CSS where possible.
 
@@ -192,22 +196,22 @@ Base link: `https://www.figma.com/design/Eo3tD5Lo2odmoWGf0Mfndz/GOO001P---MoodLi
 
 | Figma | Vue | Props (from Figma) | Node |
 |---|---|---|---|
-| `button` | AppButton | label; variant: primary · secondary; state: default · hover · focus · disabled · loading | 6044:2667 |
-| `nav-link` | NavLink | label; state: default · hover · focus · active · disabled | 6044:2683 |
-| `footer-link` | FooterLink | label; state: default · hover · focus · disabled | 6044:2692 |
+| `button` | AppButton | label; variant: primary · secondary; state: default · hover · focus · disabled · loading → `disabled`, `loading` props | 6044:2667 |
+| `nav-link` | NavLink | label; state: default · hover · focus · active · disabled → `active`, `disabled` props | 6044:2683 |
+| `footer-link` | FooterLink | label; state: default · hover · focus · disabled → `disabled` prop | 6044:2692 |
 | `language-selector` | LanguageSelector | state: default · hover · focus | 6044:2699 |
 | `menu-button` | MenuButton | state: default · hover · focus · open | 6070:9196 |
-| `nav-item-mobile` | NavItemMobile | label; state: default · pressed · active | 6071:9208 |
+| `nav-item-mobile` | NavItemMobile | label; state: default · pressed · active → `active` prop | 6071:9208 |
 | `divider` | AppDivider | orientation: horizontal · vertical; tone: default · accent · on-dark | 6044:2706 |
 | `logo` | AppLogo | theme: default · on-dark; size: lg · md · sm | 6044:2803 |
 | `icon` | AppIcon | name: awareness · support · empowerment · connection; size: lg (96) · md (40) · sm (24) | 6044:2930 |
-| `card-story` | CardStory | title, copy, link; tone: aqua · lemon · lilac; state: default · hover | 6044:3131 |
-| `stat-block` | StatBlock | value, label; icon: yes · no; icon-name | 6044:3174 |
+| `card-story` | CardStory | title, copy, link (CTA text); tone: aqua · lemon · lilac; state: default · hover. Code adds `href`, `image`, `imageAlt` | 6044:3131 |
+| `stat-block` | StatBlock | value, label; icon: yes · no → `icon` boolean; icon-name (instance swap) → `icon-name` | 6044:3174 |
 | `spinner` | AppSpinner | size: sm · md · lg; tone: default · on-dark | 6051:4913 |
 | `skeleton` | AppSkeleton | shape: text · heading · image · button · circle | 6051:4919 |
-| `input-field` | InputField | label; state: default · focus · error · disabled | 6051:4940 |
-| `alert` | AppAlert | type: info · success · warning · error; style: inline · banner | 6051:4989 |
-| `toast` | AppToast | type: success · error · info | 6051:5005 |
+| `input-field` | InputField | label; state: default · focus · error · disabled → `error` (message) and `disabled` props. Code adds `helper`, `placeholder`, `v-model` | 6051:4940 |
+| `alert` | AppAlert | type: info · success · warning · error; style: inline · banner → **`variant` prop** (`style` is reserved in Vue). Code adds `title`, `message` | 6051:4989 |
+| `toast` | AppToast | type: success · error · info. Code adds `message`, `duration` | 6051:5005 |
 | `empty-illustration` | EmptyIllustration | name: no-results · no-content · offline | 6051:5027 |
 
 ### Composites
@@ -277,4 +281,6 @@ State timing: show nothing for the first 300ms, then a skeleton (content) or spi
 
 ## Status
 
-Still pending client sign-off: hover, focus, disabled and loading states; mobile header, footer and menu; all patterns; the orange error tint (#FDEEE6). Code Connect and Storybook links are not set up yet.
+Still pending client sign-off: hover, focus, disabled and loading states; mobile header, footer and menu; all patterns; the orange error tint (#FDEEE6).
+
+Code Connect: the templates are written and validated; publishing needs a Figma Organization or Enterprise plan (see README). Storybook links for Figma Dev resources: `https://jengmun91.github.io/MoodLink2026/?path=/docs/<primitives|composites>-<figma-name>--docs`, for example `primitives-button--docs`.

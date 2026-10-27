@@ -1,0 +1,3463 @@
+{
+ "source": {
+  "fileKey": "Eo3tD5Lo2odmoWGf0Mfndz",
+  "file": "GOO001P – MoodLink MobileApp – Client V2.0",
+  "exported": "2026-10-27"
+ },
+ "collections": [
+  {
+   "id": "VariableCollectionId:6042:1057",
+   "modes": [
+    {
+     "id": "6042:0",
+     "name": "Value"
+    }
+   ],
+   "n": 36,
+   "name": "MoodLink DS / 1 Primitives"
+  },
+  {
+   "id": "VariableCollectionId:6042:1093",
+   "modes": [
+    {
+     "id": "6042:1",
+     "name": "Light"
+    }
+   ],
+   "n": 66,
+   "name": "MoodLink DS / 2 Semantic"
+  },
+  {
+   "id": "VariableCollectionId:6042:1132",
+   "modes": [
+    {
+     "id": "6042:2",
+     "name": "320"
+    },
+    {
+     "id": "6042:3",
+     "name": "360"
+    },
+    {
+     "id": "6042:4",
+     "name": "375"
+    },
+    {
+     "id": "6042:5",
+     "name": "390"
+    },
+    {
+     "id": "6042:6",
+     "name": "480"
+    },
+    {
+     "id": "6042:7",
+     "name": "1440"
+    }
+   ],
+   "n": 55,
+   "name": "MoodLink DS / 3 Responsive"
+  },
+  {
+   "id": "VariableCollectionId:6042:1187",
+   "modes": [
+    {
+     "id": "6042:8",
+     "name": "Value"
+    }
+   ],
+   "n": 66,
+   "name": "MoodLink DS / 4 Static"
+  },
+  {
+   "id": "VariableCollectionId:6059:5703",
+   "modes": [
+    {
+     "id": "6059:9",
+     "name": "en"
+    },
+    {
+     "id": "6059:10",
+     "name": "ms"
+    },
+    {
+     "id": "6059:11",
+     "name": "zh-Hans"
+    }
+   ],
+   "n": 42,
+   "name": "MoodLink DS / 5 Language"
+  }
+ ],
+ "vars": [
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Primary text, primary buttons, dark surfaces",
+   "name": "colour/brand/deep-navy",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#0d1f4d"
+   },
+   "web": "var(--colour-brand-deep-navy)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Secondary text",
+   "name": "colour/brand/deep-plum",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#433b63"
+   },
+   "web": "var(--colour-brand-deep-plum)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Accent text and fills",
+   "name": "colour/brand/muted-violet",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#7567a8"
+   },
+   "web": "var(--colour-brand-muted-violet)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Expressive accent",
+   "name": "colour/brand/dusty-orchid",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#b983a8"
+   },
+   "web": "var(--colour-brand-dusty-orchid)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Calm surface",
+   "name": "colour/brand/lilac",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#d9d2ec"
+   },
+   "web": "var(--colour-brand-lilac)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Accent fills, success",
+   "name": "colour/brand/teal",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#0097a7"
+   },
+   "web": "var(--colour-brand-teal)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Deep teal band (was Page-specific/105C7A)",
+   "name": "colour/brand/ocean",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#105c7a"
+   },
+   "web": "var(--colour-brand-ocean)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Accent text on dark",
+   "name": "colour/brand/aqua",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#aedadc"
+   },
+   "web": "var(--colour-brand-aqua)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Bright aqua highlight (was Page-specific/93EBF7)",
+   "name": "colour/brand/sky",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#93ebf7"
+   },
+   "web": "var(--colour-brand-sky)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Warm accent ring",
+   "name": "colour/brand/warm-sand",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#ebdcc5"
+   },
+   "web": "var(--colour-brand-warm-sand)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Warm surface (was Page-specific/DFC6B5)",
+   "name": "colour/brand/clay",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#dfc6b5"
+   },
+   "web": "var(--colour-brand-clay)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Optimistic surface",
+   "name": "colour/brand/pale-lemon",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#f7e8a7"
+   },
+   "web": "var(--colour-brand-pale-lemon)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Highlight, warning",
+   "name": "colour/brand/golden-ochre",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#d8a83e"
+   },
+   "web": "var(--colour-brand-golden-ochre)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Emphasis text, error",
+   "name": "colour/brand/orange",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#f26a21"
+   },
+   "web": "var(--colour-brand-orange)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. White",
+   "name": "colour/brand/white",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#ffffff"
+   },
+   "web": "var(--colour-brand-white)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Lilac tint surface (was Page-specific/F2EDFA)",
+   "name": "colour/tint/lilac",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#f2edfa"
+   },
+   "web": "var(--colour-tint-lilac)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Aqua tint surface (was Page-specific/E8F7F7)",
+   "name": "colour/tint/aqua",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#e8f7f7"
+   },
+   "web": "var(--colour-tint-aqua)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Lemon tint surface (was Page-specific/FFF7D6)",
+   "name": "colour/tint/lemon",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#fff7d6"
+   },
+   "web": "var(--colour-tint-lemon)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Off-white surface (was Page-specific/F7F7FA)",
+   "name": "colour/neutral/mist",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#f7f7fa"
+   },
+   "web": "var(--colour-neutral-mist)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Hairline borders and dividers (was Page-specific/E0E0E8)",
+   "name": "colour/neutral/cloud",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#e0e0e8"
+   },
+   "web": "var(--colour-neutral-cloud)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Lightest grey · subtle panels",
+   "name": "colour/neutral/50",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#f8fafc"
+   },
+   "web": "var(--colour-neutral-50)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Raised panels",
+   "name": "colour/neutral/100",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#f1f5f9"
+   },
+   "web": "var(--colour-neutral-100)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Disabled backgrounds, light lines",
+   "name": "colour/neutral/200",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#e2e8f0"
+   },
+   "web": "var(--colour-neutral-200)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Subtle borders",
+   "name": "colour/neutral/300",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#cbd5e1"
+   },
+   "web": "var(--colour-neutral-300)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Disabled text, placeholder",
+   "name": "colour/neutral/400",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#98a2b3"
+   },
+   "web": "var(--colour-neutral-400)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Muted text",
+   "name": "colour/neutral/500",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#667085"
+   },
+   "web": "var(--colour-neutral-500)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Secondary icons",
+   "name": "colour/neutral/600",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#475467"
+   },
+   "web": "var(--colour-neutral-600)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Secondary text on light",
+   "name": "colour/neutral/700",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#344054"
+   },
+   "web": "var(--colour-neutral-700)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Strong text alternative",
+   "name": "colour/neutral/800",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#27364a"
+   },
+   "web": "var(--colour-neutral-800)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Near-black text",
+   "name": "colour/neutral/900",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#1d2939"
+   },
+   "web": "var(--colour-neutral-900)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Darkest neutral",
+   "name": "colour/neutral/950",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#101828"
+   },
+   "web": "var(--colour-neutral-950)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Shadow colour",
+   "name": "colour/alpha/plum-8",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#433b6314"
+   },
+   "web": "var(--colour-alpha-plum-8)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Shadow colour",
+   "name": "colour/alpha/plum-10",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#433b631a"
+   },
+   "web": "var(--colour-alpha-plum-10)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Shadow colour",
+   "name": "colour/alpha/plum-14",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#433b6324"
+   },
+   "web": "var(--colour-alpha-plum-14)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Shadow colour",
+   "name": "colour/alpha/navy-24",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#0d1f4d3d"
+   },
+   "web": "var(--colour-alpha-navy-24)"
+  },
+  {
+   "col": "MoodLink DS / 1 Primitives",
+   "desc": "Base palette — referenced by Semantic tokens only. Orange tint for error backgrounds (proposal, not in approved design)",
+   "name": "colour/tint/orange",
+   "type": "COLOR",
+   "vals": {
+    "Value": "#fdeee6"
+   },
+   "web": "var(--colour-tint-orange)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Default text, headings",
+   "name": "color/text/primary",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/deep-navy"
+    }
+   },
+   "web": "var(--color-text-primary)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Supporting text",
+   "name": "color/text/secondary",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/deep-plum"
+    }
+   },
+   "web": "var(--color-text-secondary)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Eyebrows, accent words",
+   "name": "color/text/accent",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/muted-violet"
+    }
+   },
+   "web": "var(--color-text-accent)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Text on dark surfaces",
+   "name": "color/text/inverse",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/white"
+    }
+   },
+   "web": "var(--color-text-inverse)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Accent text on dark surfaces",
+   "name": "color/text/on-dark-accent",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/aqua"
+    }
+   },
+   "web": "var(--color-text-on-dark-accent)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Strong emphasis",
+   "name": "color/text/emphasis",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/orange"
+    }
+   },
+   "web": "var(--color-text-emphasis)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Page background, cards",
+   "name": "color/surface/base",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/white"
+    }
+   },
+   "web": "var(--color-surface-base)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Off-white panels",
+   "name": "color/surface/subtle",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/neutral/mist"
+    }
+   },
+   "web": "var(--color-surface-subtle)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Calm panels",
+   "name": "color/surface/calm",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/lilac"
+    }
+   },
+   "web": "var(--color-surface-calm)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Light lilac panels",
+   "name": "color/surface/calm-tint",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/tint/lilac"
+    }
+   },
+   "web": "var(--color-surface-calm-tint)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Light aqua panels",
+   "name": "color/surface/fresh-tint",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/tint/aqua"
+    }
+   },
+   "web": "var(--color-surface-fresh-tint)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Optimistic panels",
+   "name": "color/surface/optimistic",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/pale-lemon"
+    }
+   },
+   "web": "var(--color-surface-optimistic)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Light lemon panels",
+   "name": "color/surface/optimistic-tint",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/tint/lemon"
+    }
+   },
+   "web": "var(--color-surface-optimistic-tint)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Warm panels",
+   "name": "color/surface/warm",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/clay"
+    }
+   },
+   "web": "var(--color-surface-warm)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Deep teal bands",
+   "name": "color/surface/brand",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/ocean"
+    }
+   },
+   "web": "var(--color-surface-brand)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Teal accent blocks",
+   "name": "color/surface/accent",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/teal"
+    }
+   },
+   "web": "var(--color-surface-accent)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Bright aqua accents",
+   "name": "color/surface/highlight",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/sky"
+    }
+   },
+   "web": "var(--color-surface-highlight)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Violet accent blocks",
+   "name": "color/surface/expressive",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/muted-violet"
+    }
+   },
+   "web": "var(--color-surface-expressive)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Dark sections, footer",
+   "name": "color/surface/inverse",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/deep-navy"
+    }
+   },
+   "web": "var(--color-surface-inverse)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Dividers, card outlines (1.5px)",
+   "name": "color/border/default",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/neutral/cloud"
+    }
+   },
+   "web": "var(--color-border-default)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Soft outlines",
+   "name": "color/border/subtle",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/lilac"
+    }
+   },
+   "web": "var(--color-border-subtle)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Floating CTA ring",
+   "name": "color/border/warm",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/warm-sand"
+    }
+   },
+   "web": "var(--color-border-warm)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "High-contrast outlines",
+   "name": "color/border/strong",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/deep-navy"
+    }
+   },
+   "web": "var(--color-border-strong)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Primary button background",
+   "name": "color/action/primary/bg",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/deep-navy"
+    }
+   },
+   "web": "var(--color-action-primary-bg)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Primary button label",
+   "name": "color/action/primary/text",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/white"
+    }
+   },
+   "web": "var(--color-action-primary-text)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Secondary button background",
+   "name": "color/action/secondary/bg",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/white"
+    }
+   },
+   "web": "var(--color-action-secondary-bg)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Secondary button label",
+   "name": "color/action/secondary/text",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/deep-navy"
+    }
+   },
+   "web": "var(--color-action-secondary-text)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Success",
+   "name": "color/status/success",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/teal"
+    }
+   },
+   "web": "var(--color-status-success)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Warning",
+   "name": "color/status/warning",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/golden-ochre"
+    }
+   },
+   "web": "var(--color-status-warning)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Error",
+   "name": "color/status/error",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/orange"
+    }
+   },
+   "web": "var(--color-status-error)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Info",
+   "name": "color/status/info",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/muted-violet"
+    }
+   },
+   "web": "var(--color-status-info)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Default icon colour",
+   "name": "color/icon/default",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/deep-navy"
+    }
+   },
+   "web": "var(--color-icon-default)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Accent icons",
+   "name": "color/icon/accent",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/muted-violet"
+    }
+   },
+   "web": "var(--color-icon-accent)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Icons on dark",
+   "name": "color/icon/inverse",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/white"
+    }
+   },
+   "web": "var(--color-icon-inverse)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Elevation low",
+   "name": "color/shadow/low",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/alpha/plum-8"
+    }
+   },
+   "web": "var(--color-shadow-low)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Elevation medium",
+   "name": "color/shadow/medium",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/alpha/plum-10"
+    }
+   },
+   "web": "var(--color-shadow-medium)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Elevation high",
+   "name": "color/shadow/high",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/alpha/plum-14"
+    }
+   },
+   "web": "var(--color-shadow-high)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Floating CTA shadow",
+   "name": "color/shadow/floating",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/alpha/navy-24"
+    }
+   },
+   "web": "var(--color-shadow-floating)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Aqua section background (Platform cards)",
+   "name": "color/surface/fresh",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/aqua"
+    }
+   },
+   "web": "var(--color-surface-fresh)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Hover background for links and light controls",
+   "name": "color/surface/hover",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/tint/lilac"
+    }
+   },
+   "web": "var(--color-surface-hover)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Disabled control background",
+   "name": "color/surface/disabled",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/neutral/200"
+    }
+   },
+   "web": "var(--color-surface-disabled)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Disabled text",
+   "name": "color/text/disabled",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/neutral/400"
+    }
+   },
+   "web": "var(--color-text-disabled)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Link text on hover",
+   "name": "color/text/link-hover",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/muted-violet"
+    }
+   },
+   "web": "var(--color-text-link-hover)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Link text on dark surfaces on hover",
+   "name": "color/text/on-dark-hover",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/white"
+    }
+   },
+   "web": "var(--color-text-on-dark-hover)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Keyboard focus ring (3px)",
+   "name": "color/border/focus",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/teal"
+    }
+   },
+   "web": "var(--color-border-focus)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Primary button background on hover",
+   "name": "color/action/primary/bg-hover",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/deep-plum"
+    }
+   },
+   "web": "var(--color-action-primary-bg-hover)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Secondary button background on hover",
+   "name": "color/action/secondary/bg-hover",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/tint/lilac"
+    }
+   },
+   "web": "var(--color-action-secondary-bg-hover)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Language selector background",
+   "name": "color/action/selector/bg",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/teal"
+    }
+   },
+   "web": "var(--color-action-selector-bg)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Language selector background on hover",
+   "name": "color/action/selector/bg-hover",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/ocean"
+    }
+   },
+   "web": "var(--color-action-selector-bg-hover)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Primary brand colour · primary buttons, headings, dark sections",
+   "name": "color/brand/primary",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/deep-navy"
+    }
+   },
+   "web": "var(--color-brand-primary)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Secondary brand colour · eyebrows, accent text and fills",
+   "name": "color/brand/secondary",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/muted-violet"
+    }
+   },
+   "web": "var(--color-brand-secondary)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Accent · feature panels, language selector, success",
+   "name": "color/brand/accent",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/teal"
+    }
+   },
+   "web": "var(--color-brand-accent)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Highlight · warning, decorative accents",
+   "name": "color/brand/highlight",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/golden-ochre"
+    }
+   },
+   "web": "var(--color-brand-highlight)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Expressive accent · illustrations, tags",
+   "name": "color/brand/expressive",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/dusty-orchid"
+    }
+   },
+   "web": "var(--color-brand-expressive)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Skeleton placeholder shapes while content loads",
+   "name": "color/surface/skeleton",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/neutral/200"
+    }
+   },
+   "web": "var(--color-surface-skeleton)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Skeleton shimmer highlight",
+   "name": "color/surface/skeleton-highlight",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/neutral/100"
+    }
+   },
+   "web": "var(--color-surface-skeleton-highlight)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Success alert background",
+   "name": "color/status/success-bg",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/tint/aqua"
+    }
+   },
+   "web": "var(--color-status-success-bg)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Warning alert background",
+   "name": "color/status/warning-bg",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/tint/lemon"
+    }
+   },
+   "web": "var(--color-status-warning-bg)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Error alert background",
+   "name": "color/status/error-bg",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/tint/orange"
+    }
+   },
+   "web": "var(--color-status-error-bg)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Info alert background",
+   "name": "color/status/info-bg",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/tint/lilac"
+    }
+   },
+   "web": "var(--color-status-info-bg)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Input placeholder text",
+   "name": "color/text/placeholder",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/neutral/500"
+    }
+   },
+   "web": "var(--color-text-placeholder)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Error messages under fields",
+   "name": "color/text/error",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/orange"
+    }
+   },
+   "web": "var(--color-text-error)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Input border in error state",
+   "name": "color/border/error",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/orange"
+    }
+   },
+   "web": "var(--color-border-error)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Input border default",
+   "name": "color/border/input",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/neutral/300"
+    }
+   },
+   "web": "var(--color-border-input)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Input background",
+   "name": "color/surface/input",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/brand/white"
+    }
+   },
+   "web": "var(--color-surface-input)"
+  },
+  {
+   "col": "MoodLink DS / 2 Semantic",
+   "desc": "Spinner track, muted icons",
+   "name": "color/icon/muted",
+   "type": "COLOR",
+   "vals": {
+    "Light": {
+     "alias": "colour/neutral/400"
+    }
+   },
+   "web": "var(--color-icon-muted)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Font size · Hero headline",
+   "name": "font/size/display",
+   "type": "FLOAT",
+   "vals": {
+    "320": 40,
+    "360": 40,
+    "375": 40,
+    "390": 40,
+    "480": 40,
+    "1440": 64
+   },
+   "web": "var(--font-size-display)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Font size · Section statement, metric values",
+   "name": "font/size/display-sm",
+   "type": "FLOAT",
+   "vals": {
+    "320": 36,
+    "360": 36,
+    "375": 36,
+    "390": 36,
+    "480": 36,
+    "1440": 56
+   },
+   "web": "var(--font-size-display-sm)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Font size · Page / section title",
+   "name": "font/size/h1",
+   "type": "FLOAT",
+   "vals": {
+    "320": 32,
+    "360": 32,
+    "375": 32,
+    "390": 32,
+    "480": 32,
+    "1440": 48
+   },
+   "web": "var(--font-size-h1)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Font size · Section heading",
+   "name": "font/size/h2",
+   "type": "FLOAT",
+   "vals": {
+    "320": 28,
+    "360": 28,
+    "375": 28,
+    "390": 28,
+    "480": 28,
+    "1440": 36
+   },
+   "web": "var(--font-size-h2)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Font size · Card heading",
+   "name": "font/size/h3",
+   "type": "FLOAT",
+   "vals": {
+    "320": 24,
+    "360": 24,
+    "375": 24,
+    "390": 24,
+    "480": 24,
+    "1440": 28
+   },
+   "web": "var(--font-size-h3)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Font size · Sub heading",
+   "name": "font/size/h4",
+   "type": "FLOAT",
+   "vals": {
+    "320": 20,
+    "360": 20,
+    "375": 20,
+    "390": 20,
+    "480": 20,
+    "1440": 24
+   },
+   "web": "var(--font-size-h4)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Font size · Card title, emphasis",
+   "name": "font/size/title",
+   "type": "FLOAT",
+   "vals": {
+    "320": 18,
+    "360": 18,
+    "375": 18,
+    "390": 18,
+    "480": 18,
+    "1440": 18
+   },
+   "web": "var(--font-size-title)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Font size · Small titles, text links",
+   "name": "font/size/title-sm",
+   "type": "FLOAT",
+   "vals": {
+    "320": 16,
+    "360": 16,
+    "375": 16,
+    "390": 16,
+    "480": 16,
+    "1440": 16
+   },
+   "web": "var(--font-size-title-sm)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Font size · Intro paragraphs",
+   "name": "font/size/body-lg",
+   "type": "FLOAT",
+   "vals": {
+    "320": 18,
+    "360": 18,
+    "375": 18,
+    "390": 18,
+    "480": 18,
+    "1440": 18
+   },
+   "web": "var(--font-size-body-lg)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Font size · Default paragraph",
+   "name": "font/size/body",
+   "type": "FLOAT",
+   "vals": {
+    "320": 16,
+    "360": 16,
+    "375": 16,
+    "390": 16,
+    "480": 16,
+    "1440": 16
+   },
+   "web": "var(--font-size-body)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Font size · Card copy, footer links",
+   "name": "font/size/body-sm",
+   "type": "FLOAT",
+   "vals": {
+    "320": 14,
+    "360": 14,
+    "375": 14,
+    "390": 14,
+    "480": 14,
+    "1440": 14
+   },
+   "web": "var(--font-size-body-sm)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Font size · Eyebrows, navigation, labels",
+   "name": "font/size/label",
+   "type": "FLOAT",
+   "vals": {
+    "320": 14,
+    "360": 14,
+    "375": 14,
+    "390": 14,
+    "480": 14,
+    "1440": 14
+   },
+   "web": "var(--font-size-label)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Font size · Button labels",
+   "name": "font/size/button",
+   "type": "FLOAT",
+   "vals": {
+    "320": 16,
+    "360": 16,
+    "375": 16,
+    "390": 16,
+    "480": 16,
+    "1440": 16
+   },
+   "web": "var(--font-size-button)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Font size · Captions, footnotes",
+   "name": "font/size/caption",
+   "type": "FLOAT",
+   "vals": {
+    "320": 12,
+    "360": 12,
+    "375": 12,
+    "390": 12,
+    "480": 12,
+    "1440": 12
+   },
+   "web": "var(--font-size-caption)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Line height · Hero headline",
+   "name": "font/line-height/display",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/line-height/display-mobile"
+    },
+    "360": {
+     "alias": "lang/line-height/display-mobile"
+    },
+    "375": {
+     "alias": "lang/line-height/display-mobile"
+    },
+    "390": {
+     "alias": "lang/line-height/display-mobile"
+    },
+    "480": {
+     "alias": "lang/line-height/display-mobile"
+    },
+    "1440": {
+     "alias": "lang/line-height/display-desktop"
+    }
+   },
+   "web": "var(--font-line-height-display)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Line height · Section statement, metric values",
+   "name": "font/line-height/display-sm",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/line-height/display-sm-mobile"
+    },
+    "360": {
+     "alias": "lang/line-height/display-sm-mobile"
+    },
+    "375": {
+     "alias": "lang/line-height/display-sm-mobile"
+    },
+    "390": {
+     "alias": "lang/line-height/display-sm-mobile"
+    },
+    "480": {
+     "alias": "lang/line-height/display-sm-mobile"
+    },
+    "1440": {
+     "alias": "lang/line-height/display-sm-desktop"
+    }
+   },
+   "web": "var(--font-line-height-display-sm)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Line height · Page / section title",
+   "name": "font/line-height/h1",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/line-height/h1-mobile"
+    },
+    "360": {
+     "alias": "lang/line-height/h1-mobile"
+    },
+    "375": {
+     "alias": "lang/line-height/h1-mobile"
+    },
+    "390": {
+     "alias": "lang/line-height/h1-mobile"
+    },
+    "480": {
+     "alias": "lang/line-height/h1-mobile"
+    },
+    "1440": {
+     "alias": "lang/line-height/h1-desktop"
+    }
+   },
+   "web": "var(--font-line-height-h1)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Line height · Section heading",
+   "name": "font/line-height/h2",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/line-height/h2-mobile"
+    },
+    "360": {
+     "alias": "lang/line-height/h2-mobile"
+    },
+    "375": {
+     "alias": "lang/line-height/h2-mobile"
+    },
+    "390": {
+     "alias": "lang/line-height/h2-mobile"
+    },
+    "480": {
+     "alias": "lang/line-height/h2-mobile"
+    },
+    "1440": {
+     "alias": "lang/line-height/h2-desktop"
+    }
+   },
+   "web": "var(--font-line-height-h2)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Line height · Card heading",
+   "name": "font/line-height/h3",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/line-height/h3-mobile"
+    },
+    "360": {
+     "alias": "lang/line-height/h3-mobile"
+    },
+    "375": {
+     "alias": "lang/line-height/h3-mobile"
+    },
+    "390": {
+     "alias": "lang/line-height/h3-mobile"
+    },
+    "480": {
+     "alias": "lang/line-height/h3-mobile"
+    },
+    "1440": {
+     "alias": "lang/line-height/h3-desktop"
+    }
+   },
+   "web": "var(--font-line-height-h3)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Line height · Sub heading",
+   "name": "font/line-height/h4",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/line-height/h4-mobile"
+    },
+    "360": {
+     "alias": "lang/line-height/h4-mobile"
+    },
+    "375": {
+     "alias": "lang/line-height/h4-mobile"
+    },
+    "390": {
+     "alias": "lang/line-height/h4-mobile"
+    },
+    "480": {
+     "alias": "lang/line-height/h4-mobile"
+    },
+    "1440": {
+     "alias": "lang/line-height/h4-desktop"
+    }
+   },
+   "web": "var(--font-line-height-h4)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Line height · Card title, emphasis",
+   "name": "font/line-height/title",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/line-height/title-mobile"
+    },
+    "360": {
+     "alias": "lang/line-height/title-mobile"
+    },
+    "375": {
+     "alias": "lang/line-height/title-mobile"
+    },
+    "390": {
+     "alias": "lang/line-height/title-mobile"
+    },
+    "480": {
+     "alias": "lang/line-height/title-mobile"
+    },
+    "1440": {
+     "alias": "lang/line-height/title-desktop"
+    }
+   },
+   "web": "var(--font-line-height-title)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Line height · Small titles, text links",
+   "name": "font/line-height/title-sm",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/line-height/title-sm-mobile"
+    },
+    "360": {
+     "alias": "lang/line-height/title-sm-mobile"
+    },
+    "375": {
+     "alias": "lang/line-height/title-sm-mobile"
+    },
+    "390": {
+     "alias": "lang/line-height/title-sm-mobile"
+    },
+    "480": {
+     "alias": "lang/line-height/title-sm-mobile"
+    },
+    "1440": {
+     "alias": "lang/line-height/title-sm-desktop"
+    }
+   },
+   "web": "var(--font-line-height-title-sm)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Line height · Intro paragraphs",
+   "name": "font/line-height/body-lg",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/line-height/body-lg-mobile"
+    },
+    "360": {
+     "alias": "lang/line-height/body-lg-mobile"
+    },
+    "375": {
+     "alias": "lang/line-height/body-lg-mobile"
+    },
+    "390": {
+     "alias": "lang/line-height/body-lg-mobile"
+    },
+    "480": {
+     "alias": "lang/line-height/body-lg-mobile"
+    },
+    "1440": {
+     "alias": "lang/line-height/body-lg-desktop"
+    }
+   },
+   "web": "var(--font-line-height-body-lg)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Line height · Default paragraph",
+   "name": "font/line-height/body",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/line-height/body-mobile"
+    },
+    "360": {
+     "alias": "lang/line-height/body-mobile"
+    },
+    "375": {
+     "alias": "lang/line-height/body-mobile"
+    },
+    "390": {
+     "alias": "lang/line-height/body-mobile"
+    },
+    "480": {
+     "alias": "lang/line-height/body-mobile"
+    },
+    "1440": {
+     "alias": "lang/line-height/body-desktop"
+    }
+   },
+   "web": "var(--font-line-height-body)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Line height · Card copy, footer links",
+   "name": "font/line-height/body-sm",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/line-height/body-sm-mobile"
+    },
+    "360": {
+     "alias": "lang/line-height/body-sm-mobile"
+    },
+    "375": {
+     "alias": "lang/line-height/body-sm-mobile"
+    },
+    "390": {
+     "alias": "lang/line-height/body-sm-mobile"
+    },
+    "480": {
+     "alias": "lang/line-height/body-sm-mobile"
+    },
+    "1440": {
+     "alias": "lang/line-height/body-sm-desktop"
+    }
+   },
+   "web": "var(--font-line-height-body-sm)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Line height · Eyebrows, navigation, labels",
+   "name": "font/line-height/label",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/line-height/label-mobile"
+    },
+    "360": {
+     "alias": "lang/line-height/label-mobile"
+    },
+    "375": {
+     "alias": "lang/line-height/label-mobile"
+    },
+    "390": {
+     "alias": "lang/line-height/label-mobile"
+    },
+    "480": {
+     "alias": "lang/line-height/label-mobile"
+    },
+    "1440": {
+     "alias": "lang/line-height/label-desktop"
+    }
+   },
+   "web": "var(--font-line-height-label)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Line height · Button labels",
+   "name": "font/line-height/button",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/line-height/button-mobile"
+    },
+    "360": {
+     "alias": "lang/line-height/button-mobile"
+    },
+    "375": {
+     "alias": "lang/line-height/button-mobile"
+    },
+    "390": {
+     "alias": "lang/line-height/button-mobile"
+    },
+    "480": {
+     "alias": "lang/line-height/button-mobile"
+    },
+    "1440": {
+     "alias": "lang/line-height/button-desktop"
+    }
+   },
+   "web": "var(--font-line-height-button)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Line height · Captions, footnotes",
+   "name": "font/line-height/caption",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/line-height/caption-mobile"
+    },
+    "360": {
+     "alias": "lang/line-height/caption-mobile"
+    },
+    "375": {
+     "alias": "lang/line-height/caption-mobile"
+    },
+    "390": {
+     "alias": "lang/line-height/caption-mobile"
+    },
+    "480": {
+     "alias": "lang/line-height/caption-mobile"
+    },
+    "1440": {
+     "alias": "lang/line-height/caption-desktop"
+    }
+   },
+   "web": "var(--font-line-height-caption)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Letter spacing in px",
+   "name": "font/letter-spacing/display",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/letter-spacing/display-mobile"
+    },
+    "360": {
+     "alias": "lang/letter-spacing/display-mobile"
+    },
+    "375": {
+     "alias": "lang/letter-spacing/display-mobile"
+    },
+    "390": {
+     "alias": "lang/letter-spacing/display-mobile"
+    },
+    "480": {
+     "alias": "lang/letter-spacing/display-mobile"
+    },
+    "1440": {
+     "alias": "lang/letter-spacing/display-desktop"
+    }
+   },
+   "web": "var(--font-letter-spacing-display)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Letter spacing in px",
+   "name": "font/letter-spacing/h1",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/letter-spacing/h1-mobile"
+    },
+    "360": {
+     "alias": "lang/letter-spacing/h1-mobile"
+    },
+    "375": {
+     "alias": "lang/letter-spacing/h1-mobile"
+    },
+    "390": {
+     "alias": "lang/letter-spacing/h1-mobile"
+    },
+    "480": {
+     "alias": "lang/letter-spacing/h1-mobile"
+    },
+    "1440": {
+     "alias": "lang/letter-spacing/h1-desktop"
+    }
+   },
+   "web": "var(--font-letter-spacing-h1)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Letter spacing in px",
+   "name": "font/letter-spacing/h2",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/letter-spacing/h2-mobile"
+    },
+    "360": {
+     "alias": "lang/letter-spacing/h2-mobile"
+    },
+    "375": {
+     "alias": "lang/letter-spacing/h2-mobile"
+    },
+    "390": {
+     "alias": "lang/letter-spacing/h2-mobile"
+    },
+    "480": {
+     "alias": "lang/letter-spacing/h2-mobile"
+    },
+    "1440": {
+     "alias": "lang/letter-spacing/h2-desktop"
+    }
+   },
+   "web": "var(--font-letter-spacing-h2)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Letter spacing in px",
+   "name": "font/letter-spacing/h3",
+   "type": "FLOAT",
+   "vals": {
+    "320": {
+     "alias": "lang/letter-spacing/h3-mobile"
+    },
+    "360": {
+     "alias": "lang/letter-spacing/h3-mobile"
+    },
+    "375": {
+     "alias": "lang/letter-spacing/h3-mobile"
+    },
+    "390": {
+     "alias": "lang/letter-spacing/h3-mobile"
+    },
+    "480": {
+     "alias": "lang/letter-spacing/h3-mobile"
+    },
+    "1440": {
+     "alias": "lang/letter-spacing/h3-desktop"
+    }
+   },
+   "web": "var(--font-letter-spacing-h3)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Letter spacing in px",
+   "name": "font/letter-spacing/none",
+   "type": "FLOAT",
+   "vals": {
+    "320": 0,
+    "360": 0,
+    "375": 0,
+    "390": 0,
+    "480": 0,
+    "1440": 0
+   },
+   "web": "var(--font-letter-spacing-none)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Mobile 16px = 32rpx · Desktop 44px",
+   "name": "space/page-margin",
+   "type": "FLOAT",
+   "vals": {
+    "320": 16,
+    "360": 16,
+    "375": 16,
+    "390": 16,
+    "480": 16,
+    "1440": 44
+   },
+   "web": "var(--space-page-margin)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Mobile 40px = 80rpx · Desktop 48px",
+   "name": "space/section-gap",
+   "type": "FLOAT",
+   "vals": {
+    "320": 40,
+    "360": 40,
+    "375": 40,
+    "390": 40,
+    "480": 40,
+    "1440": 48
+   },
+   "web": "var(--space-section-gap)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Mobile 32px = 64rpx · Desktop 48px",
+   "name": "space/section-padding-y",
+   "type": "FLOAT",
+   "vals": {
+    "320": 32,
+    "360": 32,
+    "375": 32,
+    "390": 32,
+    "480": 32,
+    "1440": 48
+   },
+   "web": "var(--space-section-padding-y)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Mobile 12px = 24rpx · Desktop 12px",
+   "name": "space/grid-gap-sm",
+   "type": "FLOAT",
+   "vals": {
+    "320": 12,
+    "360": 12,
+    "375": 12,
+    "390": 12,
+    "480": 12,
+    "1440": 12
+   },
+   "web": "var(--space-grid-gap-sm)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Mobile 16px = 32rpx · Desktop 24px",
+   "name": "space/grid-gap",
+   "type": "FLOAT",
+   "vals": {
+    "320": 16,
+    "360": 16,
+    "375": 16,
+    "390": 16,
+    "480": 16,
+    "1440": 24
+   },
+   "web": "var(--space-grid-gap)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Mobile 20px = 40rpx · Desktop 28px",
+   "name": "space/card-padding",
+   "type": "FLOAT",
+   "vals": {
+    "320": 20,
+    "360": 20,
+    "375": 20,
+    "390": 20,
+    "480": 20,
+    "1440": 28
+   },
+   "web": "var(--space-card-padding)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Mobile 24px = 48rpx · Desktop 36px",
+   "name": "space/card-padding-lg",
+   "type": "FLOAT",
+   "vals": {
+    "320": 24,
+    "360": 24,
+    "375": 24,
+    "390": 24,
+    "480": 24,
+    "1440": 36
+   },
+   "web": "var(--space-card-padding-lg)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Mobile 4px = 8rpx · Desktop 4px",
+   "name": "space/stack/2xs",
+   "type": "FLOAT",
+   "vals": {
+    "320": 4,
+    "360": 4,
+    "375": 4,
+    "390": 4,
+    "480": 4,
+    "1440": 4
+   },
+   "web": "var(--space-stack-2xs)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Mobile 8px = 16rpx · Desktop 8px",
+   "name": "space/stack/xs",
+   "type": "FLOAT",
+   "vals": {
+    "320": 8,
+    "360": 8,
+    "375": 8,
+    "390": 8,
+    "480": 8,
+    "1440": 8
+   },
+   "web": "var(--space-stack-xs)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Mobile 12px = 24rpx · Desktop 16px",
+   "name": "space/stack/sm",
+   "type": "FLOAT",
+   "vals": {
+    "320": 12,
+    "360": 12,
+    "375": 12,
+    "390": 12,
+    "480": 12,
+    "1440": 16
+   },
+   "web": "var(--space-stack-sm)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Mobile 16px = 32rpx · Desktop 24px",
+   "name": "space/stack/md",
+   "type": "FLOAT",
+   "vals": {
+    "320": 16,
+    "360": 16,
+    "375": 16,
+    "390": 16,
+    "480": 16,
+    "1440": 24
+   },
+   "web": "var(--space-stack-md)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Mobile 24px = 48rpx · Desktop 36px",
+   "name": "space/stack/lg",
+   "type": "FLOAT",
+   "vals": {
+    "320": 24,
+    "360": 24,
+    "375": 24,
+    "390": 24,
+    "480": 24,
+    "1440": 36
+   },
+   "web": "var(--space-stack-lg)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Mobile 32px = 64rpx · Desktop 48px",
+   "name": "space/stack/xl",
+   "type": "FLOAT",
+   "vals": {
+    "320": 32,
+    "360": 32,
+    "375": 32,
+    "390": 32,
+    "480": 32,
+    "1440": 48
+   },
+   "web": "var(--space-stack-xl)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Layout grid columns (4 mobile / 12 desktop)",
+   "name": "grid/columns",
+   "type": "FLOAT",
+   "vals": {
+    "320": 4,
+    "360": 4,
+    "375": 4,
+    "390": 4,
+    "480": 4,
+    "1440": 12
+   },
+   "web": "var(--grid-columns)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Mobile 16px = 32rpx · Desktop 24px",
+   "name": "grid/gutter",
+   "type": "FLOAT",
+   "vals": {
+    "320": 16,
+    "360": 16,
+    "375": 16,
+    "390": 16,
+    "480": 16,
+    "1440": 24
+   },
+   "web": "var(--grid-gutter)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Mobile 16px = 32rpx · Desktop 44px",
+   "name": "grid/margin",
+   "type": "FLOAT",
+   "vals": {
+    "320": 16,
+    "360": 16,
+    "375": 16,
+    "390": 16,
+    "480": 16,
+    "1440": 44
+   },
+   "web": "var(--grid-margin)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Button height (54 desktop / 48 mobile)",
+   "name": "button/height",
+   "type": "FLOAT",
+   "vals": {
+    "320": 48,
+    "360": 48,
+    "375": 48,
+    "390": 48,
+    "480": 48,
+    "1440": 54
+   },
+   "web": "var(--button-height)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Mobile 24px = 48rpx · Desktop 32px",
+   "name": "button/padding-x",
+   "type": "FLOAT",
+   "vals": {
+    "320": 24,
+    "360": 24,
+    "375": 24,
+    "390": 24,
+    "480": 24,
+    "1440": 32
+   },
+   "web": "var(--button-padding-x)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Icon size",
+   "name": "icon/size/feature",
+   "type": "FLOAT",
+   "vals": {
+    "320": 32,
+    "360": 32,
+    "375": 32,
+    "390": 32,
+    "480": 32,
+    "1440": 40
+   },
+   "web": "var(--icon-size-feature)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Frame width for this mode",
+   "name": "viewport/width",
+   "type": "FLOAT",
+   "vals": {
+    "320": 320,
+    "360": 360,
+    "375": 375,
+    "390": 390,
+    "480": 480,
+    "1440": 1440
+   },
+   "web": "var(--viewport-width)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Content width = viewport − 2 × margin",
+   "name": "grid/container",
+   "type": "FLOAT",
+   "vals": {
+    "320": 288,
+    "360": 328,
+    "375": 343,
+    "390": 358,
+    "480": 448,
+    "1440": 1352
+   },
+   "web": "var(--grid-container)"
+  },
+  {
+   "col": "MoodLink DS / 3 Responsive",
+   "desc": "Input field height (54 desktop / 48 mobile), matches button",
+   "name": "input/height",
+   "type": "FLOAT",
+   "vals": {
+    "320": 48,
+    "360": 48,
+    "375": 48,
+    "390": 48,
+    "480": 48,
+    "1440": 54
+   },
+   "web": "var(--input-height)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Accent wave bar",
+   "name": "radius/xs",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 4
+   },
+   "web": "var(--radius-xs)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Small panels",
+   "name": "radius/md",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 20
+   },
+   "web": "var(--radius-md)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Image panels",
+   "name": "radius/lg",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 24
+   },
+   "web": "var(--radius-lg)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Story and insight cards",
+   "name": "radius/card",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 26
+   },
+   "web": "var(--radius-card)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Large panels",
+   "name": "radius/xl",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 28
+   },
+   "web": "var(--radius-xl)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Hero and feature panels",
+   "name": "radius/2xl",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 30
+   },
+   "web": "var(--radius-2xl)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Oversized panels",
+   "name": "radius/3xl",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 32
+   },
+   "web": "var(--radius-3xl)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Buttons, chips, circular CTA",
+   "name": "radius/pill",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 999
+   },
+   "web": "var(--radius-pill)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Dividers and outlines",
+   "name": "border/width/default",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 1.5
+   },
+   "web": "var(--border-width-default)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Hairlines",
+   "name": "border/width/thin",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 1
+   },
+   "web": "var(--border-width-thin)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Floating CTA ring",
+   "name": "border/width/accent",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 5
+   },
+   "web": "var(--border-width-accent)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Small phones",
+   "name": "breakpoint/xs",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 320
+   },
+   "web": "var(--breakpoint-xs)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Android baseline",
+   "name": "breakpoint/sm",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 360
+   },
+   "web": "var(--breakpoint-sm)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Mobile design base (1px = 2rpx)",
+   "name": "breakpoint/md",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 375
+   },
+   "web": "var(--breakpoint-md)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Large phones",
+   "name": "breakpoint/lg",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 390
+   },
+   "web": "var(--breakpoint-lg)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Mobile max",
+   "name": "breakpoint/xl",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 480
+   },
+   "web": "var(--breakpoint-xl)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Desktop design base",
+   "name": "breakpoint/desktop",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 1440
+   },
+   "web": "var(--breakpoint-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Icon size",
+   "name": "icon/size/sm",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 16
+   },
+   "web": "var(--icon-size-sm)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Icon size",
+   "name": "icon/size/md",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 20
+   },
+   "web": "var(--icon-size-md)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Icon size",
+   "name": "icon/size/lg",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 24
+   },
+   "web": "var(--icon-size-lg)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Icon size",
+   "name": "icon/size/xl",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 32
+   },
+   "web": "var(--icon-size-xl)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Metric icons",
+   "name": "icon/size/2xl",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 40
+   },
+   "web": "var(--icon-size-2xl)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Shadow value (px)",
+   "name": "elevation/low/y",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 2
+   },
+   "web": "var(--elevation-low-y)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Shadow value (px)",
+   "name": "elevation/low/blur",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 8
+   },
+   "web": "var(--elevation-low-blur)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Shadow value (px)",
+   "name": "elevation/medium/y",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 6
+   },
+   "web": "var(--elevation-medium-y)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Shadow value (px)",
+   "name": "elevation/medium/blur",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 18
+   },
+   "web": "var(--elevation-medium-blur)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Shadow value (px)",
+   "name": "elevation/high/y",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 12
+   },
+   "web": "var(--elevation-high-y)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Shadow value (px)",
+   "name": "elevation/high/blur",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 32
+   },
+   "web": "var(--elevation-high-blur)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Floating consultation CTA",
+   "name": "elevation/floating/y",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 5
+   },
+   "web": "var(--elevation-floating-y)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Floating consultation CTA",
+   "name": "elevation/floating/blur",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 14
+   },
+   "web": "var(--elevation-floating-blur)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Headings — Plus Jakarta Sans (EN / MS), Noto Sans SC (ZH) via 5 Language",
+   "name": "font/family/heading",
+   "type": "STRING",
+   "vals": {
+    "Value": {
+     "alias": "lang/font/heading"
+    }
+   },
+   "web": "var(--font-family-heading)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Body copy and UI text — Plus Jakarta Sans (EN / MS), Noto Sans SC (ZH) via 5 Language",
+   "name": "font/family/body",
+   "type": "STRING",
+   "vals": {
+    "Value": {
+     "alias": "lang/font/body"
+    }
+   },
+   "web": "var(--font-family-body)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Simplified Chinese — Noto Sans SC (used automatically in the zh-Hans language mode)",
+   "name": "font/family/chinese",
+   "type": "STRING",
+   "vals": {
+    "Value": "Noto Sans SC"
+   },
+   "web": "var(--font-family-chinese)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Body copy",
+   "name": "font/weight/regular",
+   "type": "STRING",
+   "vals": {
+    "Value": {
+     "alias": "lang/weight/regular"
+    }
+   },
+   "web": "var(--font-weight-regular)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Labels, buttons, navigation",
+   "name": "font/weight/medium",
+   "type": "STRING",
+   "vals": {
+    "Value": {
+     "alias": "lang/weight/medium"
+    }
+   },
+   "web": "var(--font-weight-medium)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Headings H1–H3, card titles",
+   "name": "font/weight/semibold",
+   "type": "STRING",
+   "vals": {
+    "Value": {
+     "alias": "lang/weight/semibold"
+    }
+   },
+   "web": "var(--font-weight-semibold)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Display headlines, metric values",
+   "name": "font/weight/bold",
+   "type": "STRING",
+   "vals": {
+    "Value": {
+     "alias": "lang/weight/bold"
+    }
+   },
+   "web": "var(--font-weight-bold)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Focus ring width",
+   "name": "border/width/focus",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 3
+   },
+   "web": "var(--border-width-focus)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Hover and focus transitions (buttons, links, cards) · 150ms",
+   "name": "motion/duration/fast",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 150
+   },
+   "web": "var(--motion-duration-fast)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Small UI changes: dropdowns, tooltips · 200ms",
+   "name": "motion/duration/base",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 200
+   },
+   "web": "var(--motion-duration-base)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Larger movements: modals, drawers, carousels · 300ms",
+   "name": "motion/duration/slow",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 300
+   },
+   "web": "var(--motion-duration-slow)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Default easing for hover and state changes",
+   "name": "motion/easing/standard",
+   "type": "STRING",
+   "vals": {
+    "Value": "cubic-bezier(0.2, 0, 0, 1)"
+   },
+   "web": "var(--motion-easing-standard)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Elements entering the screen",
+   "name": "motion/easing/enter",
+   "type": "STRING",
+   "vals": {
+    "Value": "cubic-bezier(0, 0, 0.2, 1)"
+   },
+   "web": "var(--motion-easing-enter)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Elements leaving the screen",
+   "name": "motion/easing/exit",
+   "type": "STRING",
+   "vals": {
+    "Value": "cubic-bezier(0.4, 0, 1, 1)"
+   },
+   "web": "var(--motion-easing-exit)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 2px (4rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/2",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 2
+   },
+   "web": "var(--space-scale-2)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 4px (8rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/4",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 4
+   },
+   "web": "var(--space-scale-4)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 6px (12rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/6",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 6
+   },
+   "web": "var(--space-scale-6)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 8px (16rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/8",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 8
+   },
+   "web": "var(--space-scale-8)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 10px (20rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/10",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 10
+   },
+   "web": "var(--space-scale-10)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 12px (24rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/12",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 12
+   },
+   "web": "var(--space-scale-12)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 16px (32rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/16",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 16
+   },
+   "web": "var(--space-scale-16)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 20px (40rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/20",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 20
+   },
+   "web": "var(--space-scale-20)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 24px (48rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/24",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 24
+   },
+   "web": "var(--space-scale-24)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 28px (56rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/28",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 28
+   },
+   "web": "var(--space-scale-28)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 32px (64rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/32",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 32
+   },
+   "web": "var(--space-scale-32)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 36px (72rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/36",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 36
+   },
+   "web": "var(--space-scale-36)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 40px (80rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/40",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 40
+   },
+   "web": "var(--space-scale-40)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 48px (96rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/48",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 48
+   },
+   "web": "var(--space-scale-48)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 56px (112rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/56",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 56
+   },
+   "web": "var(--space-scale-56)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 64px (128rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/64",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 64
+   },
+   "web": "var(--space-scale-64)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 80px (160rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/80",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 80
+   },
+   "web": "var(--space-scale-80)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Base spacing step 96px (192rpx). Use named tokens first; this scale is for one-off component spacing.",
+   "name": "space/scale/96",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 96
+   },
+   "web": "var(--space-scale-96)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Skeleton shimmer loop · 1500ms linear infinite",
+   "name": "motion/duration/shimmer",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 1500
+   },
+   "web": "var(--motion-duration-shimmer)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Spinner rotation · 800ms linear infinite",
+   "name": "motion/duration/spin",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 800
+   },
+   "web": "var(--motion-duration-spin)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Wait 300ms before showing skeleton / spinner (avoid flicker)",
+   "name": "motion/delay/loading",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 300
+   },
+   "web": "var(--motion-delay-loading)"
+  },
+  {
+   "col": "MoodLink DS / 4 Static",
+   "desc": "Toast auto-dismiss after 5000ms",
+   "name": "motion/duration/toast",
+   "type": "FLOAT",
+   "vals": {
+    "Value": 5000
+   },
+   "web": "var(--motion-duration-toast)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Heading font: Plus Jakarta Sans for English and Malay (approved); Noto Sans SC for Simplified Chinese",
+   "name": "lang/font/heading",
+   "type": "STRING",
+   "vals": {
+    "en": "Plus Jakarta Sans",
+    "ms": "Plus Jakarta Sans",
+    "zh-Hans": "Noto Sans SC"
+   },
+   "web": "var(--lang-font-heading)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Body and UI font: Plus Jakarta Sans for English and Malay (approved); Noto Sans SC for Simplified Chinese",
+   "name": "lang/font/body",
+   "type": "STRING",
+   "vals": {
+    "en": "Plus Jakarta Sans",
+    "ms": "Plus Jakarta Sans",
+    "zh-Hans": "Noto Sans SC"
+   },
+   "web": "var(--lang-font-body)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Regular weight per language",
+   "name": "lang/weight/regular",
+   "type": "STRING",
+   "vals": {
+    "en": "Regular",
+    "ms": "Regular",
+    "zh-Hans": "Regular"
+   },
+   "web": "var(--lang-weight-regular)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Medium weight per language",
+   "name": "lang/weight/medium",
+   "type": "STRING",
+   "vals": {
+    "en": "Medium",
+    "ms": "Medium",
+    "zh-Hans": "Medium"
+   },
+   "web": "var(--lang-weight-medium)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "SemiBold (Noto Sans SC has no SemiBold → Medium)",
+   "name": "lang/weight/semibold",
+   "type": "STRING",
+   "vals": {
+    "en": "SemiBold",
+    "ms": "SemiBold",
+    "zh-Hans": "Medium"
+   },
+   "web": "var(--lang-weight-semibold)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Bold weight per language",
+   "name": "lang/weight/bold",
+   "type": "STRING",
+   "vals": {
+    "en": "Bold",
+    "ms": "Bold",
+    "zh-Hans": "Bold"
+   },
+   "web": "var(--lang-weight-bold)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height display · desktop · zh-Hans uses 1.3×",
+   "name": "lang/line-height/display-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": 72,
+    "ms": 72,
+    "zh-Hans": 84
+   },
+   "web": "var(--lang-line-height-display-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height display · mobile · zh-Hans uses 1.3×",
+   "name": "lang/line-height/display-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": 48,
+    "ms": 48,
+    "zh-Hans": 52
+   },
+   "web": "var(--lang-line-height-display-mobile)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height display-sm · desktop · zh-Hans uses 1.3×",
+   "name": "lang/line-height/display-sm-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": 64,
+    "ms": 64,
+    "zh-Hans": 72
+   },
+   "web": "var(--lang-line-height-display-sm-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height display-sm · mobile · zh-Hans uses 1.3×",
+   "name": "lang/line-height/display-sm-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": 44,
+    "ms": 44,
+    "zh-Hans": 46
+   },
+   "web": "var(--lang-line-height-display-sm-mobile)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height h1 · desktop · zh-Hans uses 1.3×",
+   "name": "lang/line-height/h1-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": 56,
+    "ms": 56,
+    "zh-Hans": 62
+   },
+   "web": "var(--lang-line-height-h1-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height h1 · mobile · zh-Hans uses 1.3×",
+   "name": "lang/line-height/h1-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": 40,
+    "ms": 40,
+    "zh-Hans": 42
+   },
+   "web": "var(--lang-line-height-h1-mobile)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height h2 · desktop · zh-Hans uses 1.4×",
+   "name": "lang/line-height/h2-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": 44,
+    "ms": 44,
+    "zh-Hans": 50
+   },
+   "web": "var(--lang-line-height-h2-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height h2 · mobile · zh-Hans uses 1.4×",
+   "name": "lang/line-height/h2-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": 36,
+    "ms": 36,
+    "zh-Hans": 40
+   },
+   "web": "var(--lang-line-height-h2-mobile)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height h3 · desktop · zh-Hans uses 1.4×",
+   "name": "lang/line-height/h3-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": 36,
+    "ms": 36,
+    "zh-Hans": 40
+   },
+   "web": "var(--lang-line-height-h3-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height h3 · mobile · zh-Hans uses 1.4×",
+   "name": "lang/line-height/h3-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": 32,
+    "ms": 32,
+    "zh-Hans": 34
+   },
+   "web": "var(--lang-line-height-h3-mobile)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height h4 · desktop · zh-Hans uses 1.4×",
+   "name": "lang/line-height/h4-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": 32,
+    "ms": 32,
+    "zh-Hans": 34
+   },
+   "web": "var(--lang-line-height-h4-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height h4 · mobile · zh-Hans uses 1.4×",
+   "name": "lang/line-height/h4-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": 28,
+    "ms": 28,
+    "zh-Hans": 28
+   },
+   "web": "var(--lang-line-height-h4-mobile)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height title · desktop · zh-Hans uses 1.5×",
+   "name": "lang/line-height/title-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": 24,
+    "ms": 24,
+    "zh-Hans": 28
+   },
+   "web": "var(--lang-line-height-title-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height title · mobile · zh-Hans uses 1.5×",
+   "name": "lang/line-height/title-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": 24,
+    "ms": 24,
+    "zh-Hans": 28
+   },
+   "web": "var(--lang-line-height-title-mobile)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height title-sm · desktop · zh-Hans uses 1.5×",
+   "name": "lang/line-height/title-sm-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": 22,
+    "ms": 22,
+    "zh-Hans": 24
+   },
+   "web": "var(--lang-line-height-title-sm-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height title-sm · mobile · zh-Hans uses 1.5×",
+   "name": "lang/line-height/title-sm-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": 22,
+    "ms": 22,
+    "zh-Hans": 24
+   },
+   "web": "var(--lang-line-height-title-sm-mobile)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height body-lg · desktop · zh-Hans uses 1.75×",
+   "name": "lang/line-height/body-lg-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": 28,
+    "ms": 28,
+    "zh-Hans": 32
+   },
+   "web": "var(--lang-line-height-body-lg-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height body-lg · mobile · zh-Hans uses 1.75×",
+   "name": "lang/line-height/body-lg-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": 28,
+    "ms": 28,
+    "zh-Hans": 32
+   },
+   "web": "var(--lang-line-height-body-lg-mobile)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height body · desktop · zh-Hans uses 1.75×",
+   "name": "lang/line-height/body-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": 26,
+    "ms": 26,
+    "zh-Hans": 28
+   },
+   "web": "var(--lang-line-height-body-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height body · mobile · zh-Hans uses 1.75×",
+   "name": "lang/line-height/body-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": 26,
+    "ms": 26,
+    "zh-Hans": 28
+   },
+   "web": "var(--lang-line-height-body-mobile)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height body-sm · desktop · zh-Hans uses 1.7×",
+   "name": "lang/line-height/body-sm-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": 22,
+    "ms": 22,
+    "zh-Hans": 24
+   },
+   "web": "var(--lang-line-height-body-sm-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height body-sm · mobile · zh-Hans uses 1.7×",
+   "name": "lang/line-height/body-sm-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": 22,
+    "ms": 22,
+    "zh-Hans": 24
+   },
+   "web": "var(--lang-line-height-body-sm-mobile)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height label · desktop · zh-Hans uses 1.55×",
+   "name": "lang/line-height/label-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": 20,
+    "ms": 20,
+    "zh-Hans": 22
+   },
+   "web": "var(--lang-line-height-label-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height label · mobile · zh-Hans uses 1.55×",
+   "name": "lang/line-height/label-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": 20,
+    "ms": 20,
+    "zh-Hans": 22
+   },
+   "web": "var(--lang-line-height-label-mobile)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height button · desktop · zh-Hans uses 1.5×",
+   "name": "lang/line-height/button-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": 24,
+    "ms": 24,
+    "zh-Hans": 24
+   },
+   "web": "var(--lang-line-height-button-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height button · mobile · zh-Hans uses 1.5×",
+   "name": "lang/line-height/button-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": 24,
+    "ms": 24,
+    "zh-Hans": 24
+   },
+   "web": "var(--lang-line-height-button-mobile)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height caption · desktop · zh-Hans uses 1.67×",
+   "name": "lang/line-height/caption-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": 18,
+    "ms": 18,
+    "zh-Hans": 20
+   },
+   "web": "var(--lang-line-height-caption-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Line height caption · mobile · zh-Hans uses 1.67×",
+   "name": "lang/line-height/caption-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": 18,
+    "ms": 18,
+    "zh-Hans": 20
+   },
+   "web": "var(--lang-line-height-caption-mobile)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Letter spacing display · desktop · 0 for zh-Hans",
+   "name": "lang/letter-spacing/display-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": -1.2799999713897705,
+    "ms": -1.2799999713897705,
+    "zh-Hans": 0
+   },
+   "web": "var(--lang-letter-spacing-display-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Letter spacing display · mobile · 0 for zh-Hans",
+   "name": "lang/letter-spacing/display-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": -0.6000000238418579,
+    "ms": -0.6000000238418579,
+    "zh-Hans": 0
+   },
+   "web": "var(--lang-letter-spacing-display-mobile)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Letter spacing h1 · desktop · 0 for zh-Hans",
+   "name": "lang/letter-spacing/h1-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": -0.7200000286102295,
+    "ms": -0.7200000286102295,
+    "zh-Hans": 0
+   },
+   "web": "var(--lang-letter-spacing-h1-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Letter spacing h1 · mobile · 0 for zh-Hans",
+   "name": "lang/letter-spacing/h1-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": -0.3199999928474426,
+    "ms": -0.3199999928474426,
+    "zh-Hans": 0
+   },
+   "web": "var(--lang-letter-spacing-h1-mobile)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Letter spacing h2 · desktop · 0 for zh-Hans",
+   "name": "lang/letter-spacing/h2-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": -0.36000001430511475,
+    "ms": -0.36000001430511475,
+    "zh-Hans": 0
+   },
+   "web": "var(--lang-letter-spacing-h2-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Letter spacing h2 · mobile · 0 for zh-Hans",
+   "name": "lang/letter-spacing/h2-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": -0.14000000059604645,
+    "ms": -0.14000000059604645,
+    "zh-Hans": 0
+   },
+   "web": "var(--lang-letter-spacing-h2-mobile)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Letter spacing h3 · desktop · 0 for zh-Hans",
+   "name": "lang/letter-spacing/h3-desktop",
+   "type": "FLOAT",
+   "vals": {
+    "en": -0.14000000059604645,
+    "ms": -0.14000000059604645,
+    "zh-Hans": 0
+   },
+   "web": "var(--lang-letter-spacing-h3-desktop)"
+  },
+  {
+   "col": "MoodLink DS / 5 Language",
+   "desc": "Letter spacing h3 · mobile · 0 for zh-Hans",
+   "name": "lang/letter-spacing/h3-mobile",
+   "type": "FLOAT",
+   "vals": {
+    "en": 0,
+    "ms": 0,
+    "zh-Hans": 0
+   },
+   "web": "var(--lang-letter-spacing-h3-mobile)"
+  }
+ ]
+}

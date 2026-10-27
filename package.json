@@ -1,7 +1,7 @@
 {
   "name": "moodlink2026",
   "private": true,
-  "version": "0.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,7 +12,8 @@
     "figma:publish": "figma connect publish",
     "figma:parse": "figma connect parse",
     "figma:check": "tsc -p figma/tsconfig.json && figma connect parse > /dev/null && echo Code Connect templates OK",
-    "tokens:uniapp": "node scripts/tokens-to-uniapp.mjs"
+    "tokens:uniapp": "node scripts/tokens-to-uniapp.mjs",
+    "tokens": "node scripts/tokens-from-figma.mjs && node scripts/tokens-to-uniapp.mjs"
   },
   "dependencies": {
     "@fontsource/noto-sans-sc": "^5.3.1",

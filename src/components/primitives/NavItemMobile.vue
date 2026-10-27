@@ -1,7 +1,11 @@
 <script setup lang="ts">
 // Figma: nav-item-mobile · node 6071:9208 · state = default | pressed | active
 // pressed is the CSS :active state.
-withDefaults(defineProps<{ href?: string; active?: boolean }>(), { href: '#', active: false })
+withDefaults(defineProps<{ label?: string; href?: string; active?: boolean }>(), {
+  label: '',
+  href: '#',
+  active: false,
+})
 </script>
 
 <template>
@@ -11,7 +15,7 @@ withDefaults(defineProps<{ href?: string; active?: boolean }>(), { href: '#', ac
     :href="href"
     :aria-current="active ? 'page' : undefined"
   >
-    <span class="ml-nav-item-mobile__label"><slot /></span>
+    <span class="ml-nav-item-mobile__label"><slot>{{ label }}</slot></span>
     <span class="ml-nav-item-mobile__chevron" aria-hidden="true">›</span>
   </a>
 </template>

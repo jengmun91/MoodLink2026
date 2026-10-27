@@ -1,7 +1,8 @@
 <script setup lang="ts">
 // Figma: nav-link · node 6044:2683
 // state = default | hover | focus | active | disabled (hover / focus are CSS)
-withDefaults(defineProps<{ href?: string; active?: boolean; disabled?: boolean }>(), {
+withDefaults(defineProps<{ label?: string; href?: string; active?: boolean; disabled?: boolean }>(), {
+  label: '',
   href: '#',
   active: false,
   disabled: false,
@@ -16,7 +17,7 @@ withDefaults(defineProps<{ href?: string; active?: boolean; disabled?: boolean }
     :aria-current="active ? 'page' : undefined"
     :aria-disabled="disabled ? 'true' : undefined"
   >
-    <span class="ml-nav-link__label"><slot /></span>
+    <span class="ml-nav-link__label"><slot>{{ label }}</slot></span>
     <span class="ml-nav-link__indicator" aria-hidden="true" />
   </a>
 </template>

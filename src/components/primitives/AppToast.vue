@@ -8,7 +8,13 @@ const props = withDefaults(
   { type: 'success', duration: 5000 },
 )
 const emit = defineEmits<{ dismiss: [] }>()
-const glyph = { success: '✓', error: '×', info: 'i' } as const
+// Status glyphs drawn as SVG so they sit exactly in the centre of the 24px circle
+// (text characters such as × sit low because of font metrics). Matches Figma toast > status-icon.
+const glyph = {
+  success: 'M7 12.5l3.2 3.2L17 9',
+  error: 'M8.5 8.5l7 7M15.5 8.5l-7 7',
+  info: 'M12 11v6M12 7.5v.01',
+} as const
 
 let timer: ReturnType<typeof setTimeout> | undefined
 const start = () => {
@@ -28,10 +34,16 @@ onBeforeUnmount(stop)
     @mouseenter="stop"
     @mouseleave="start"
   >
-    <span class="ml-toast__icon" aria-hidden="true">{{ glyph[type] }}</span>
+    <span class="ml-toast__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="24" height="24" focusable="false">
+        <path :d="glyph[type]" />
+      </svg>
+    </span>
     <span class="ml-toast__message">{{ message }}</span>
     <button type="button" class="ml-toast__close" aria-label="Dismiss" @click="$emit('dismiss')">
-      ×
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+        <path d="M7 7l10 10M17 7L7 17" />
+      </svg>
     </button>
   </div>
 </template>
@@ -66,8 +78,20 @@ onBeforeUnmount(stop)
   height: 24px;
   border-radius: var(--radius-pill);
   background: var(--ml-toast-accent);
-  font-size: var(--font-size-label);
-  font-weight: var(--font-weight-bold);
+}
+.ml-toast__icon svg,
+.ml-toast__close svg {
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.ml-toast__icon svg {
+  stroke-width: 2.25;
+}
+.ml-toast__close svg {
+  stroke-width: 2;
 }
 .ml-toast__message {
   flex: 1;
@@ -83,8 +107,11 @@ onBeforeUnmount(stop)
   border: 0;
   border-radius: var(--radius-pill);
   background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   color: var(--color-text-on-dark-accent);
-  font-size: var(--font-size-title);
   cursor: pointer;
 }
 .ml-toast__close:focus-visible {

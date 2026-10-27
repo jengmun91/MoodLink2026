@@ -3,13 +3,23 @@
 // Sizes follow the screen: value 56px desktop / 36px mobile.
 import AppIcon, { type IconName } from './AppIcon.vue'
 
-defineProps<{ value: string; label: string; icon?: IconName }>()
+withDefaults(
+  defineProps<{
+    value: string
+    label: string
+    /** Figma `icon = yes | no`. */
+    icon?: boolean
+    /** Figma `icon-name` (instance swap of the `icon` component). */
+    iconName?: IconName
+  }>(),
+  { icon: true, iconName: 'awareness' },
+)
 </script>
 
 <template>
   <div class="ml-stat-block">
     <span v-if="icon" class="ml-stat-block__icon">
-      <AppIcon :name="icon" size="md" />
+      <AppIcon :name="iconName" size="md" />
     </span>
     <strong class="ml-stat-block__value">{{ value }}</strong>
     <span class="ml-stat-block__label">{{ label }}</span>
