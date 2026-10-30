@@ -1,5 +1,6 @@
 // Converts src/styles/tokens.css (web, px) into src/styles/tokens.uni.css for uni-app H5 / EAP.
-// Mobile design base is 375px, so 1px = 2rpx. Hairline borders (1px, 1.5px) stay in px.
+// Mobile design base is 390px (website and H5 since 30 Oct 2026): rpx = px × 750 / 390 (≈ 1.923).
+// Hairline borders (1px, 1.5px) stay in px.
 // Run: npm run tokens:uniapp
 import { readFileSync, writeFileSync } from 'node:fs'
 
@@ -16,7 +17,7 @@ const out = withoutDesktop
     if (!m) return line
     const [, indent, name, value] = m
     if (KEEP_PX.test(name)) return line
-    const converted = value.replace(/(-?\d*\.?\d+)px/g, (_, n) => `${Math.round(Number(n) * 2 * 100) / 100}rpx`)
+    const converted = value.replace(/(-?\d*\.?\d+)px/g, (_, n) => `${Math.round(((Number(n) * 750) / 390) * 100) / 100}rpx`)
     return `${indent}${name}: ${converted};`
   })
   .join('\n')

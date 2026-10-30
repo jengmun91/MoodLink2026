@@ -37,7 +37,7 @@ withDefaults(
   min-width: 280px;
   overflow: hidden;
   border: var(--border-width-default) solid var(--color-border-default);
-  border-radius: var(--radius-card);
+  border-radius: var(--radius-lg);
   color: var(--color-text-primary);
   text-decoration: none;
   transition:
@@ -101,7 +101,7 @@ withDefaults(
   color: var(--color-text-link-hover);
 }
 .ml-card-story:focus-visible {
-  outline: var(--border-width-focus) solid var(--color-border-focus);
-  outline-offset: 2px;
+  outline: none;
+  box-shadow: 0 0 0 var(--border-width-focus) var(--color-border-focus); /* Figma: effect style MoodLink DS / Focus ring */
 }
 </style>

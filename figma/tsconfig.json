@@ -11,6 +11,8 @@
     "skipLibCheck": true
   },
   "include": [
-    "*.figma.ts"
+    "*.figma.ts",
+    "mental-health/*.figma.ts",
+    "h5/*.figma.ts"
   ]
 }

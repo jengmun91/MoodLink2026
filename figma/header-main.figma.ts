@@ -1,4 +1,4 @@
-// url=https://www.figma.com/design/Eo3tD5Lo2odmoWGf0Mfndz/GOO001P---MoodLink-MobileApp---Client-V2.0?node-id=6044-3242
+// url=https://www.figma.com/design/Eo3tD5Lo2odmoWGf0Mfndz/GOO001P---MoodLink-Final-For-Dev?node-id=6044-3242
 // source=https://github.com/jengmun91/MoodLink2026/blob/main/src/components/composites/HeaderMain.vue
 // component=HeaderMain
 import figma from 'figma'

@@ -14,7 +14,7 @@ const meta = {
   title: 'Composites/nav-menu-mobile',
   component: NavMenuMobile,
   tags: ['autodocs'],
-  globals: { viewport: { value: 'mobile375' } },
+  globals: { viewport: { value: 'mobile390' } },
   parameters: { ...figmaDocs('nav-menu-mobile', '6071:9311', '`role="dialog"`, focus trapped, Esc closes. Emits `close` and `selectLanguage`.'),
     layout: 'fullscreen' },
   args: { items: navItems, languageOpen: false },

@@ -2,7 +2,7 @@
 
 Vue 3 components, design tokens and Storybook for the MoodLink website (Vue 3 + Vite) and H5 / EAP (uni-app), built from the Figma file **GOO001P – MoodLink MobileApp – Client V2.0**.
 
-- Figma handover page: https://www.figma.com/design/Eo3tD5Lo2odmoWGf0Mfndz/GOO001P---MoodLink-MobileApp---Client-V2.0?node-id=6059-6722
+- Figma handover page: https://www.figma.com/design/Eo3tD5Lo2odmoWGf0Mfndz/GOO001P---MoodLink-Final-For-Dev?node-id=6059-6722
 - Rules for developers and AI coding assistants: [`CLAUDE.md`](./CLAUDE.md)
 - What changed since v1: [`CHANGELOG.md`](./CHANGELOG.md)
 
@@ -23,7 +23,7 @@ npm run build       # type-check + production build
 |---|---|
 | `tokens/figma-variables.json` | Snapshot of the five `MoodLink DS / …` Figma variable collections (265 variables). |
 | `src/styles/tokens.css` | Generated from the snapshot: Primitives, Semantic, Responsive (320 · 360 · 375 · 390 · 480 · 1440), Static and Language (en · ms · zh-Hans). Mobile values by default, desktop from 481px, Simplified Chinese overrides under `:lang(zh-Hans)`. |
-| `src/styles/tokens.uni.css` | The same tokens in rpx for uni-app (1px = 2rpx). |
+| `src/styles/tokens.uni.css` | The same tokens in rpx for uni-app (design base 390px: rpx = px × 750 / 390). |
 | `src/styles/base.css` | Self-hosted fonts (Plus Jakarta Sans for English and Malay, Noto Sans SC for Simplified Chinese), reset and `.ml-text-*` text classes. |
 | `src/components/` | 21 components with the same names and props as Figma. |
 | `src/assets/` | Logo, icon and illustration SVGs exported from Figma. |
@@ -119,7 +119,8 @@ To remove the mappings: `npx figma connect unpublish`.
 
 1. Refresh `tokens/figma-variables.json` by running `scripts/figma-export-variables.js` inside Figma (or ask Claude, with the Figma connector, to refresh the snapshot).
 2. Run `npm run tokens`. It writes `tokens.css` and `tokens.uni.css`.
-3. Review the diff and commit.
+3. Run `npm run tokens:check`. It must pass (CI runs it too and fails on hand edits or a stale build).
+4. Review the diff and commit.
 
 ## Notes
 

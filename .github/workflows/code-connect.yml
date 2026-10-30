@@ -1,0 +1,40 @@
+# Publishes the Code Connect templates to Figma Dev Mode. Run it manually:
+# GitHub → Actions → "Code Connect" → Run workflow.
+# One-time setup: Settings → Secrets and variables → Actions → New secret FIGMA_ACCESS_TOKEN
+# (scopes: Code Connect: Write, File content: Read). Requires a Figma Organization or Enterprise plan.
+name: Code Connect
+
+on:
+  workflow_dispatch:
+    inputs:
+      sync_icons:
+        description: Re-download the mental-health icons and regenerate their templates first
+        type: boolean
+        default: true
+      dry_run:
+        description: Validate only (do not publish)
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      FIGMA_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - if: ${{ inputs.sync_icons }}
+        run: npm run figma:icons
+      - run: npm run tokens:check
+      - run: npm run figma:check
+      - run: npm run figma:verify
+      - if: ${{ !inputs.dry_run }}
+        run: npx figma connect publish --exit-on-unreadable-files

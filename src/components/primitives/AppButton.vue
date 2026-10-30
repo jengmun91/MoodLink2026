@@ -9,6 +9,8 @@ withDefaults(
     /** Figma text property `label`. A default slot still works for rich content. */
     label?: string
     variant?: 'primary' | 'secondary'
+    /** Figma `size`: md (48 / 54px) or sm (min 44px, label type) for compact rows such as consultation-row and checkout-bar. */
+    size?: 'md' | 'sm'
     disabled?: boolean
     loading?: boolean
     /** Render as a link instead of a <button>. */
@@ -17,7 +19,7 @@ withDefaults(
     /** Shown instead of the label while loading. */
     loadingLabel?: string
   }>(),
-  { label: '', variant: 'primary', disabled: false, loading: false, type: 'button', loadingLabel: 'Sending…' },
+  { label: '', variant: 'primary', size: 'md', disabled: false, loading: false, type: 'button', loadingLabel: 'Sending…' },
 )
 </script>
 
@@ -25,7 +27,7 @@ withDefaults(
   <component
     :is="href ? 'a' : 'button'"
     class="ml-button"
-    :class="[`ml-button--${variant}`, { 'is-loading': loading }]"
+    :class="[`ml-button--${variant}`, `ml-button--${size}`, { 'is-loading': loading }]"
     :href="href && !disabled ? href : undefined"
     :type="href ? undefined : type"
     :disabled="href ? undefined : disabled || loading"
@@ -63,6 +65,14 @@ withDefaults(
   text-decoration: none;
   cursor: pointer;
   transition: background-color var(--motion-duration-fast) var(--motion-easing-standard);
+}
+
+/* size=sm: min 44px touch target, label type (Figma button size=sm) */
+.ml-button--sm {
+  min-height: 44px;
+  padding: var(--space-scale-10) var(--space-scale-16);
+  font-size: var(--font-size-label);
+  line-height: var(--font-line-height-label);
 }
 
 /* Labels wrap to two lines instead of truncating (EN / MS). */

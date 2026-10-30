@@ -93,18 +93,18 @@ withDefaults(
   background: var(--color-surface-base);
 }
 .ml-card-feature--insight {
-  border-radius: var(--radius-card);
+  border-radius: var(--radius-lg);
 }
 .ml-card-feature--insight .ml-card-feature__media {
   aspect-ratio: 476 / 400;
   border-radius: var(--radius-lg);
 }
 .ml-card-feature--people {
-  border-radius: var(--radius-2xl);
+  border-radius: var(--radius-3xl);
 }
 .ml-card-feature--people .ml-card-feature__media {
   aspect-ratio: 670 / 450;
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-3xl);
 }
 .ml-card-feature__content {
   display: flex;
@@ -141,14 +141,14 @@ withDefaults(
   color: var(--color-text-link-hover);
 }
 .ml-card-feature:focus-visible {
-  outline: var(--border-width-focus) solid var(--color-border-focus);
-  outline-offset: 2px;
+  outline: none;
+  box-shadow: 0 0 0 var(--border-width-focus) var(--color-border-focus); /* Figma: effect style MoodLink DS / Focus ring */
 }
 
 /* platform */
 .ml-card-feature--platform .ml-card-feature__media {
   aspect-ratio: 670 / 528;
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-3xl);
 }
 .ml-card-feature__bubble {
   display: flex;
@@ -156,7 +156,7 @@ withDefaults(
   flex-direction: column;
   gap: var(--space-stack-sm);
   padding: var(--space-scale-20) var(--space-card-padding-lg) var(--space-scale-48);
-  border-radius: var(--radius-2xl);
+  border-radius: var(--radius-3xl);
   background: var(--color-surface-base);
   transition: box-shadow var(--motion-duration-fast) var(--motion-easing-standard);
 }

@@ -48,8 +48,9 @@ withDefaults(defineProps<{ label?: string; href?: string; active?: boolean }>(),
   background: var(--color-surface-hover);
 }
 .ml-nav-item-mobile:focus-visible {
+  /* Figma state=focus: 3px inside outline (no fill on the row, so no outer ring) */
   outline: var(--border-width-focus) solid var(--color-border-focus);
-  outline-offset: 0;
+  outline-offset: calc(var(--border-width-focus) * -1);
 }
 .ml-nav-item-mobile.is-active {
   background: var(--color-surface-calm-tint);

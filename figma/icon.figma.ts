@@ -1,4 +1,4 @@
-// url=https://www.figma.com/design/Eo3tD5Lo2odmoWGf0Mfndz/GOO001P---MoodLink-MobileApp---Client-V2.0?node-id=6044-2930
+// url=https://www.figma.com/design/Eo3tD5Lo2odmoWGf0Mfndz/GOO001P---MoodLink-Final-For-Dev?node-id=6044-2930
 // source=https://github.com/jengmun91/MoodLink2026/blob/main/src/components/primitives/AppIcon.vue
 // component=AppIcon
 import figma from 'figma'
